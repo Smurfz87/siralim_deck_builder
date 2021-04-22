@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace UnityTemplateProjects
 {
-    //[CreateAssetMenu(fileName = "QInputField_", menuName = "field/queryableInput", order = 0)]
     public class QueryableInputField : MonoBehaviour
     {
         public string labelText;

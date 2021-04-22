@@ -506,273 +506,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: Abomination
-      m_Image: {fileID: 0}
-    - m_Text: Alemental
-      m_Image: {fileID: 0}
-    - m_Text: Amaranth
-      m_Image: {fileID: 0}
-    - m_Text: Amphisbaena
-      m_Image: {fileID: 0}
-    - m_Text: Angel
-      m_Image: {fileID: 0}
-    - m_Text: Animatus
-      m_Image: {fileID: 0}
-    - m_Text: Apis
-      m_Image: {fileID: 0}
-    - m_Text: Apocalypse
-      m_Image: {fileID: 0}
-    - m_Text: Arachnalisk
-      m_Image: {fileID: 0}
-    - m_Text: Aspect
-      m_Image: {fileID: 0}
-    - m_Text: Asura
-      m_Image: {fileID: 0}
-    - m_Text: Automaton
-      m_Image: {fileID: 0}
-    - m_Text: Avatar
-      m_Image: {fileID: 0}
-    - m_Text: Banshee
-      m_Image: {fileID: 0}
-    - m_Text: Bard
-      m_Image: {fileID: 0}
-    - m_Text: Basilisk
-      m_Image: {fileID: 0}
-    - m_Text: Bat
-      m_Image: {fileID: 0}
-    - m_Text: Brownie
-      m_Image: {fileID: 0}
-    - m_Text: Carbuncle
-      m_Image: {fileID: 0}
-    - m_Text: Carnage
-      m_Image: {fileID: 0}
-    - m_Text: Carver
-      m_Image: {fileID: 0}
-    - m_Text: Centaur
-      m_Image: {fileID: 0}
-    - m_Text: Cerberus
-      m_Image: {fileID: 0}
-    - m_Text: Clutcher
-      m_Image: {fileID: 0}
-    - m_Text: Cockatrice
-      m_Image: {fileID: 0}
-    - m_Text: Concoction
-      m_Image: {fileID: 0}
-    - m_Text: Construct
-      m_Image: {fileID: 0}
-    - m_Text: Cruncher
-      m_Image: {fileID: 0}
-    - m_Text: Crusader
-      m_Image: {fileID: 0}
-    - m_Text: Demigod
-      m_Image: {fileID: 0}
-    - m_Text: Devil
-      m_Image: {fileID: 0}
-    - m_Text: Diabolic Horde
-      m_Image: {fileID: 0}
-    - m_Text: Djinn
-      m_Image: {fileID: 0}
-    - m_Text: Doom Fortress
-      m_Image: {fileID: 0}
-    - m_Text: Doomguard
-      m_Image: {fileID: 0}
-    - m_Text: Dragon
-      m_Image: {fileID: 0}
-    - m_Text: Dryad
-      m_Image: {fileID: 0}
-    - m_Text: Dumpling
-      m_Image: {fileID: 0}
-    - m_Text: Efreet
-      m_Image: {fileID: 0}
-    - m_Text: Eft
-      m_Image: {fileID: 0}
-    - m_Text: Elf
-      m_Image: {fileID: 0}
-    - m_Text: Ent
-      m_Image: {fileID: 0}
-    - m_Text: Familiar
-      m_Image: {fileID: 0}
-    - m_Text: Fiend
-      m_Image: {fileID: 0}
-    - m_Text: Forsaken
-      m_Image: {fileID: 0}
-    - m_Text: Gargantuan
-      m_Image: {fileID: 0}
-    - m_Text: Gargoyle
-      m_Image: {fileID: 0}
-    - m_Text: Gemling
-      m_Image: {fileID: 0}
-    - m_Text: Ghoul
-      m_Image: {fileID: 0}
-    - m_Text: Giant
-      m_Image: {fileID: 0}
-    - m_Text: Godspawn
-      m_Image: {fileID: 0}
-    - m_Text: Golem
-      m_Image: {fileID: 0}
-    - m_Text: Gorgon
-      m_Image: {fileID: 0}
-    - m_Text: Griffon
-      m_Image: {fileID: 0}
-    - m_Text: Grimoire
-      m_Image: {fileID: 0}
-    - m_Text: Harpy
-      m_Image: {fileID: 0}
-    - m_Text: Hemomancer
-      m_Image: {fileID: 0}
-    - m_Text: Herbling
-      m_Image: {fileID: 0}
-    - m_Text: Hound
-      m_Image: {fileID: 0}
-    - m_Text: Hunter
-      m_Image: {fileID: 0}
-    - m_Text: Imler
-      m_Image: {fileID: 0}
-    - m_Text: Imling
-      m_Image: {fileID: 0}
-    - m_Text: Imp
-      m_Image: {fileID: 0}
-    - m_Text: Inquisitor
-      m_Image: {fileID: 0}
-    - m_Text: Koloss
-      m_Image: {fileID: 0}
-    - m_Text: Leech
-      m_Image: {fileID: 0}
-    - m_Text: Leper
-      m_Image: {fileID: 0}
-    - m_Text: Lich
-      m_Image: {fileID: 0}
-    - m_Text: Maniac
-      m_Image: {fileID: 0}
-    - m_Text: Manticore
-      m_Image: {fileID: 0}
-    - m_Text: Masochist
-      m_Image: {fileID: 0}
-    - m_Text: Mimic
-      m_Image: {fileID: 0}
-    - m_Text: Minotaur
-      m_Image: {fileID: 0}
-    - m_Text: Mite
-      m_Image: {fileID: 0}
-    - m_Text: Mogwai
-      m_Image: {fileID: 0}
-    - m_Text: Mummy
-      m_Image: {fileID: 0}
-    - m_Text: Nix
-      m_Image: {fileID: 0}
-    - m_Text: Occultist
-      m_Image: {fileID: 0}
-    - m_Text: Ophan
-      m_Image: {fileID: 0}
-    - m_Text: Ossein
-      m_Image: {fileID: 0}
-    - m_Text: Paragon
-      m_Image: {fileID: 0}
-    - m_Text: Phase Warrior
-      m_Image: {fileID: 0}
-    - m_Text: Phoenix
-      m_Image: {fileID: 0}
-    - m_Text: Pilwiz
-      m_Image: {fileID: 0}
-    - m_Text: Pit Worm
-      m_Image: {fileID: 0}
-    - m_Text: Pit Wraith
-      m_Image: {fileID: 0}
-    - m_Text: Plague Doctor
-      m_Image: {fileID: 0}
-    - m_Text: Priest
-      m_Image: {fileID: 0}
-    - m_Text: Purrghast
-      m_Image: {fileID: 0}
-    - m_Text: Raven
-      m_Image: {fileID: 0}
-    - m_Text: Reaper
-      m_Image: {fileID: 0}
-    - m_Text: Revenant
-      m_Image: {fileID: 0}
-    - m_Text: Rift Dancer
-      m_Image: {fileID: 0}
-    - m_Text: Salamander
-      m_Image: {fileID: 0}
-    - m_Text: Sanctus
-      m_Image: {fileID: 0}
-    - m_Text: Satyr
-      m_Image: {fileID: 0}
-    - m_Text: Sea Shambler
-      m_Image: {fileID: 0}
-    - m_Text: Seraph
-      m_Image: {fileID: 0}
-    - m_Text: Shade
-      m_Image: {fileID: 0}
-    - m_Text: Shadow
-      m_Image: {fileID: 0}
-    - m_Text: Shapeshifter
-      m_Image: {fileID: 0}
-    - m_Text: Sin
-      m_Image: {fileID: 0}
-    - m_Text: Siren
-      m_Image: {fileID: 0}
-    - m_Text: Skeleton
-      m_Image: {fileID: 0}
-    - m_Text: Slime
-      m_Image: {fileID: 0}
-    - m_Text: Smith
-      m_Image: {fileID: 0}
-    - m_Text: Smog
-      m_Image: {fileID: 0}
-    - m_Text: Snaptrap
-      m_Image: {fileID: 0}
-    - m_Text: Soulflayer
-      m_Image: {fileID: 0}
-    - m_Text: Sparktail
-      m_Image: {fileID: 0}
-    - m_Text: Spectre
-      m_Image: {fileID: 0}
-    - m_Text: Sphinx
-      m_Image: {fileID: 0}
-    - m_Text: Spirit
-      m_Image: {fileID: 0}
-    - m_Text: Stag
-      m_Image: {fileID: 0}
-    - m_Text: Storm
-      m_Image: {fileID: 0}
-    - m_Text: Tanukrook
-      m_Image: {fileID: 0}
-    - m_Text: Toxdweller
-      m_Image: {fileID: 0}
-    - m_Text: Tremor
-      m_Image: {fileID: 0}
-    - m_Text: Troll
-      m_Image: {fileID: 0}
-    - m_Text: Unguided
-      m_Image: {fileID: 0}
-    - m_Text: Unicorn
-      m_Image: {fileID: 0}
-    - m_Text: Valkyrie
-      m_Image: {fileID: 0}
-    - m_Text: Voidlord
-      m_Image: {fileID: 0}
-    - m_Text: Vortex
-      m_Image: {fileID: 0}
-    - m_Text: Vulpes
-      m_Image: {fileID: 0}
-    - m_Text: Waspid
-      m_Image: {fileID: 0}
-    - m_Text: Watcher
-      m_Image: {fileID: 0}
-    - m_Text: Wight
-      m_Image: {fileID: 0}
-    - m_Text: Wisp
-      m_Image: {fileID: 0}
-    - m_Text: Wolpertinger
-      m_Image: {fileID: 0}
-    - m_Text: Wyvern
-      m_Image: {fileID: 0}
-    - m_Text: Yeti
-      m_Image: {fileID: 0}
-    - m_Text: Zantai
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -890,7 +624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Abomination
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0742325eaf41fec45821e7e0b0f0de97, type: 2}
   m_sharedMaterial: {fileID: -5607889162203695877, guid: 0742325eaf41fec45821e7e0b0f0de97, type: 2}
@@ -968,6 +702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5925958158424082244}
+  - component: {fileID: 7867814038491373924}
   m_Layer: 5
   m_Name: Family
   m_TagString: Untagged
@@ -996,6 +731,20 @@ RectTransform:
   m_AnchoredPosition: {x: 272.58, y: -50.000004}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7867814038491373924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2640172522483115851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953d7e9600ef4482a18275e70d9af5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labelText: Family
+  parent: {fileID: 2640172522483115851}
 --- !u!1 &3161232621405522768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,7 +1340,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.8
+  m_fontSize: 27.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

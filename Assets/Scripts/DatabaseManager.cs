@@ -92,7 +92,7 @@ namespace UnityTemplateProjects
             }
         }
 
-        public IEnumerable<Monster> QueryForMonsters(QueryObject query)
+        public List<Monster> QueryForMonsters(QueryObject query)
         {
             OpenConnection();
             CreateCommand();
@@ -220,8 +220,6 @@ namespace UnityTemplateProjects
             return data;
         }
 
-        //private Monster MapToMonster(SqliteDataReader reader)
-
         private string AddParameterList(IEnumerable<string> parameters, string identifier, SqliteCommand statement)
         {
             var queryList = new List<string>();
@@ -233,38 +231,6 @@ namespace UnityTemplateProjects
             }
 
             return string.Join(" OR ", queryList);
-        }
-
-        private void TestConnection()
-        {
-            OpenConnection();
-            CreateCommand();
-
-            const string query = @"SELECT * FROM monsters";
-            command.CommandText = query;
-            IDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                string clazz = reader.GetString(0);
-                string family = reader.GetString(1);
-                string creature = reader.GetString(2);
-
-                Debug.Log(clazz + ", " + family + ", " + creature);
-            }
-
-            reader.Dispose();
-
-            Close();
-            
-            /*var schemaTable = reader.GetSchemaTable();
-            if (schemaTable != null)
-                foreach (DataRow row in schemaTable.Rows)
-                {
-                    foreach (DataColumn column in schemaTable.Columns)
-                    {
-                        Debug.Log(string.Format("{0} = {1}", column.ColumnName, row[column]));
-                    }
-                }*/
         }
     }
 }

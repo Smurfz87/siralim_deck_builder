@@ -17,7 +17,7 @@ namespace UnityTemplateProjects
         private List<string> description;
 
         //private static readonly Regex RegexSplit = new Regex(@"\.\;\,");
-        private static readonly string[] SplitOn = new[] { ".", ";", "," };
+        private static readonly string[] CharsToSplitOn = { ".", ";", "," };
 
         /// <summary>
         /// Transforms input to list by removing whitespaces
@@ -57,7 +57,7 @@ namespace UnityTemplateProjects
 
         private static List<string> SplitToList(string input)
         {
-            return new List<string>(input.Split(SplitOn, StringSplitOptions.None));
+            return new List<string>(input.Split(CharsToSplitOn, StringSplitOptions.None));
         }
 
         private static string RemoveWhitespace(string input)

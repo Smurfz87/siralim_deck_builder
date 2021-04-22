@@ -5,12 +5,13 @@ using UnityEngine;
 
 namespace UnityTemplateProjects
 {
-    [CreateAssetMenu(fileName = "QDropdownField_", menuName = "field/queryableDropdown", order = 0)]
-    public class QueryableDropdownField : ScriptableObject
+    public class QueryableDropdownField : MonoBehaviour
     {
+        [SerializeField]
         public string labelText;
 
-        public GameObject parent;
+        [SerializeField]
+        private GameObject parent;
 
         private TMP_Text TmpText { set; get; }
         private TMP_Dropdown TmpDropdown { set; get; }
@@ -31,10 +32,9 @@ namespace UnityTemplateProjects
             return TmpDropdown.options[TmpDropdown.value].text;
         }
 
-        public IEnumerator Clear()
+        public void Clear()
         {
             TmpDropdown.Select();
-            yield return new WaitForEndOfFrame();
             TmpDropdown.value = 0;
             TmpDropdown.RefreshShownValue();
         }

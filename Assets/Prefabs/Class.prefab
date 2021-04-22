@@ -444,6 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7910775965097664336}
+  - component: {fileID: 1541231582354128481}
   m_Layer: 5
   m_Name: Class
   m_TagString: Untagged
@@ -472,6 +473,20 @@ RectTransform:
   m_AnchoredPosition: {x: 90.8598, y: 474}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1541231582354128481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7910775965097664339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953d7e9600ef4482a18275e70d9af5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labelText: Class
+  parent: {fileID: 7910775965097664339}
 --- !u!1 &7910775965209258204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0742325eaf41fec45821e7e0b0f0de97, type: 2}
   m_sharedMaterial: {fileID: -5607889162203695877, guid: 0742325eaf41fec45821e7e0b0f0de97, type: 2}
@@ -1288,13 +1303,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: Option A
-      m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:

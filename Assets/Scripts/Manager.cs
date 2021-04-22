@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -15,8 +14,13 @@ namespace UnityTemplateProjects
         [SerializeField] private QueryableDropdownField classDropdown;
         [SerializeField] private QueryableDropdownField familyDropdown;
         [SerializeField] private QueryableInputField creatureInput;
-        //[SerializeField] private QueryableInputField traitInput;
-        //[SerializeField] private QueryableInputField descriptionInput;
+        [SerializeField] private QueryableInputField traitInput;
+        [SerializeField] private QueryableInputField descriptionInput;
+
+        [SerializeField] private SearchResultUIManager searchResultPanel;
+
+        [SerializeField] private DropdownData classDropdownData;
+        [SerializeField] private DropdownData familyDropdownData;
 
         private DatabaseManager dbManager;
         
@@ -24,11 +28,12 @@ namespace UnityTemplateProjects
         {
             dbManager = new DatabaseManager(resetDb);
 
-            InitializeDatabase(dbManager);
-            InitializeDropdownLists(dbManager);
+            InitializeDatabase();
+            InitializeDropdownLists();
             
             creatureInput.Initialize();
-            
+            traitInput.Initialize();
+            descriptionInput.Initialize();
         }
 
         public void RegisterChange()
@@ -36,17 +41,15 @@ namespace UnityTemplateProjects
             queryObject.MClass = classDropdown.GetCurrentValue();
             queryObject.Family = familyDropdown.GetCurrentValue();
             queryObject.SetCreatures(creatureInput.GetCurrentValue());
-            //queryObject.Trait = "";
+            queryObject.Trait = traitInput.GetCurrentValue();
+            queryObject.SetDescription(descriptionInput.GetCurrentValue());
         }
 
         //TODO: can probably move code from RegisterChange into Search()
         public void Search()
         {
             var monsters = dbManager.QueryForMonsters(queryObject);
-            foreach (var monster in monsters)
-            {
-                Debug.Log(monster);
-            }
+            searchResultPanel.DrawSearchResult(monsters);
         }
 
         public void Clear()
@@ -55,9 +58,11 @@ namespace UnityTemplateProjects
             classDropdown.Clear();
             familyDropdown.Clear();
             creatureInput.Clear();
+            traitInput.Clear();
+            descriptionInput.Clear();
         }
 
-        private void InitializeDatabase(DatabaseManager dbManager)
+        private void InitializeDatabase()
         {
             if (!resetDb) return;
             var json = File.ReadAllText(Application.dataPath + "/Data/traits.json");
@@ -74,27 +79,30 @@ namespace UnityTemplateProjects
             }
         }
 
-        private void InitializeDropdownLists(DatabaseManager dbManager)
+        private void InitializeDropdownLists()
         {
-            if (resetDb)
+            if (resetDb || classDropdownData.Data == null || classDropdownData.Data.Count <= 0)
             {
                 var classes = dbManager.QueryForColumn(Query
                     .SELECT_FIELD_FROM_MONSTERS
                     .Replace("{field}", "distinct class"));
                 classes.Sort((s1, s2) => string.Compare(s1, s2, StringComparison.Ordinal));
                 classes.Insert(0, "");
-                classDropdown.Initialize(classes);
+                classDropdownData.Data = classes;
             }
+            classDropdown.Initialize(classDropdownData.Data);
 
-            if (resetDb)
+
+            if (resetDb || familyDropdownData.Data == null || familyDropdownData.Data?.Count <= 0)
             {
                 var families = dbManager.QueryForColumn(Query
                     .SELECT_FIELD_FROM_MONSTERS
                     .Replace("{field}", "distinct family"));
                 families.Sort((s1, s2) => string.Compare(s1, s2, StringComparison.Ordinal));
                 families.Insert(0, "");
-                familyDropdown.Initialize(families);
+                familyDropdownData.Data = families;
             }
+            familyDropdown.Initialize(familyDropdownData.Data);
         }
     }
 }
