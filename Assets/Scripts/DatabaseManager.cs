@@ -62,7 +62,7 @@ namespace UnityTemplateProjects
             return parameter;
         }
 
-        private string WrapLike(string value)
+        private static string WrapLike(string value)
         {
             return "%" + value + "%";
         }
@@ -181,15 +181,24 @@ namespace UnityTemplateProjects
             var monsters = new List<Monster>();
             while (reader.Read())
             {
-                monsters.Add(new Monster
+                try
                 {
-                    MonsterClass = reader.GetString(0),
-                    Family = reader.GetString(1),
-                    Creature = reader.GetString(2),
-                    TraitName = reader.GetString(3),
-                    TraitDescription = reader.GetString(4),
-                    MaterialName = reader.GetString(5)
-                });
+                    monsters.Add(new Monster
+                    {
+                        MonsterClass = reader.GetSafeString(0),
+                        Family = reader.GetSafeString(1),
+                        Creature = reader.GetSafeString(2),
+                        TraitName = reader.GetSafeString(3),
+                        TraitDescription = reader.GetSafeString(4),
+                        MaterialName = reader.GetSafeString(5)
+                    });
+                }
+                catch (InvalidCastException e)
+                {
+                    Debug.LogError(e);
+                    Debug.LogError(reader);
+                    throw;
+                }
             }
             
             Close();

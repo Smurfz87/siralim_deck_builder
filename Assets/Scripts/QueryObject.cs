@@ -16,7 +16,6 @@ namespace UnityTemplateProjects
         private List<string> creatures;
         private List<string> description;
 
-        //private static readonly Regex RegexSplit = new Regex(@"\.\;\,");
         private static readonly string[] CharsToSplitOn = { ".", ";", "," };
 
         /// <summary>
@@ -29,8 +28,7 @@ namespace UnityTemplateProjects
         /// <param name="creatureString"></param>
         public void SetCreatures(string creatureString)
         {
-            creatureString = RemoveWhitespace(creatureString);
-            creatures = SplitToList(creatureString);
+            creatures = SplitToList(RemoveWhitespace(creatureString));
         }
 
         public IEnumerable<string> GetCreatures()

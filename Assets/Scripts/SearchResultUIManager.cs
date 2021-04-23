@@ -21,7 +21,6 @@ public class SearchResultUIManager : MonoBehaviour
         horizontalSpacing = rowPrefab.GetComponent<HorizontalLayoutGroup>().spacing;
         cardDimensions = cardPrefab.GetComponent<RectTransform>().sizeDelta;
 
-        //TODO: verify setting x this way does not fuck up size
         rowPrefab.GetComponent<RectTransform>().sizeDelta = new Vector2(50, cardDimensions.y);
     }
 
@@ -29,7 +28,7 @@ public class SearchResultUIManager : MonoBehaviour
     {
         DestroyAllChildren();
         
-        var columnWidth = GetComponent<RectTransform>().sizeDelta.x;
+        var columnWidth = GetComponent<RectTransform>().rect.width;
         var cardsPerRow = Mathf.FloorToInt(columnWidth / (cardDimensions.x - horizontalSpacing / 2));
 
         var numOfRows = Mathf.CeilToInt((float) monsters.Count / cardsPerRow);
