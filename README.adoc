@@ -1,0 +1,43 @@
+// external URL:
+:url-fallen-games: https://thefallengames.com/
+:url-optimized-scroll-view: https://assetstore.unity.com/packages/tools/gui/optimized-scrollview-adapter-68436
+// images:
+:url-team-layout-screen: 
+:url-search-interface: /documentation/search_layout.PNG
+
+= Siralim Ultimate Deck Builder
+
+Siralim Ultimate Deck Builder is a deck building tool designed to 
+make it easier to design the correct composition of creatures for 
+your build.
+
+The deck builder features a filterable list of all the game creatures.
+
+== GUI
+
+.Search screen
+image::{url-search-interface}[Image of search GUI]
+
+== Filtering
+
+The tool supports filtering creatures on the following conditions:
+
+- Class
+- Family
+- Creature
+- Trait
+- Trait Description
+
+== Planned Features
+
+- Import / Export build
+
+== Dependencies
+
+=== Optimized Scroll View
+
+The project uses {url-fallen-games}[Fallen Games]' 
+{url-optimized-scroll-view}[Optimized ScrollView Adapter] to 
+dynamically add and remove items from the search result.
+To run this project in Unity you need to have a valid licence for
+the plugin and download it into the `Assets/Plugins` directory.

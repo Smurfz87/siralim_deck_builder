@@ -31,7 +31,7 @@ namespace UnityTemplateProjects
             Close();
         }
 
-        public void Insert(Monster monster)
+        public void Insert(CreatureModel creatureModel)
         {
             OpenConnection();
 
@@ -41,12 +41,12 @@ namespace UnityTemplateProjects
                 Connection = (SqliteConnection) connection
             };
 
-            preparedStatement.Parameters.Add(CreateParameter("class", monster.MonsterClass.ToString()));
-            preparedStatement.Parameters.Add(CreateParameter("family", monster.Family));
-            preparedStatement.Parameters.Add(CreateParameter("creature", monster.Creature));
-            preparedStatement.Parameters.Add(CreateParameter("trait", monster.TraitName));
-            preparedStatement.Parameters.Add(CreateParameter("description", monster.TraitDescription));
-            preparedStatement.Parameters.Add(CreateParameter("material", monster.MaterialName));
+            preparedStatement.Parameters.Add(CreateParameter("class", creatureModel.MonsterClass.ToString()));
+            preparedStatement.Parameters.Add(CreateParameter("family", creatureModel.Family));
+            preparedStatement.Parameters.Add(CreateParameter("creatureModel", creatureModel.CreatureName));
+            preparedStatement.Parameters.Add(CreateParameter("trait", creatureModel.TraitName));
+            preparedStatement.Parameters.Add(CreateParameter("description", creatureModel.TraitDescription));
+            preparedStatement.Parameters.Add(CreateParameter("material", creatureModel.MaterialName));
             preparedStatement.ExecuteNonQuery();
 
             preparedStatement.Dispose();
@@ -92,7 +92,7 @@ namespace UnityTemplateProjects
             }
         }
 
-        public List<Monster> QueryForMonsters(QueryObject query)
+        public List<CreatureModel> QueryForMonsters(QueryObject query)
         {
             OpenConnection();
             CreateCommand();
@@ -178,16 +178,16 @@ namespace UnityTemplateProjects
             preparedStatement.CommandText = sb.ToString();
             var reader = preparedStatement.ExecuteReader();
             
-            var monsters = new List<Monster>();
+            var monsters = new List<CreatureModel>();
             while (reader.Read())
             {
                 try
                 {
-                    monsters.Add(new Monster
+                    monsters.Add(new CreatureModel
                     {
                         MonsterClass = reader.GetSafeString(0),
                         Family = reader.GetSafeString(1),
-                        Creature = reader.GetSafeString(2),
+                        CreatureName = reader.GetSafeString(2),
                         TraitName = reader.GetSafeString(3),
                         TraitDescription = reader.GetSafeString(4),
                         MaterialName = reader.GetSafeString(5)
