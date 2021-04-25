@@ -1,25 +1,3 @@
-/*
- * * * * This bare-bones script was auto-generated * * * *
- * The code commented with "/ * * /" demonstrates how data is retrieved and passed to the adapter, plus other common commands. You can remove/replace it once you've got the idea
- * Complete it according to your specific use-case
- * Consult the Example scripts if you get stuck, as they provide solutions to most common scenarios
- * 
- * Main terms to understand:
- *		Model = class that contains the data associated with an item (title, content, icon etc.)
- *		Views Holder = class that contains references to your views (Text, Image, MonoBehavior, etc.)
- * 
- * Default expected UI hiererchy:
- *	  ...
- *		-Canvas
- *		  ...
- *			-MyScrollViewAdapter
- *				-Viewport
- *					-Content
- *				-Scrollbar (Optional)
- *				-ItemPrefab (Optional)
- * 
- */
-
 using System;
 using System.Collections;
 using System.Collections.Generic;

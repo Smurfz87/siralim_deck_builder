@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 public class CreatureModel
 {
     [JsonProperty("class")]
-    public string MonsterClass { set; get; }
+    public string CreatureClass { set; get; }
     [JsonProperty("family")]
     public string Family { set; get; }
     [JsonProperty("creature")]
@@ -19,9 +19,9 @@ public class CreatureModel
     public override string ToString()
     {
         var sb = new StringBuilder();
-        sb.Append("class: ");
-        sb.Append(MonsterClass);
-        sb.Append("; family: ");
+        sb.Append("Class: ");
+        sb.Append(CreatureClass);
+        sb.Append("; Family: ");
         sb.Append(Family);
         sb.Append("; Creature: ");
         sb.Append(CreatureName);

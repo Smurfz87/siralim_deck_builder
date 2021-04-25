@@ -8,7 +8,6 @@ using UnityTemplateProjects;
 public class Manager : MonoBehaviour
 {
     [SerializeField] private bool resetDb = false;
-    [SerializeField] private QueryObject queryObject;
 
     [SerializeField] private QueryableDropdownField classDropdown;
     [SerializeField] private QueryableDropdownField familyDropdown;
@@ -16,22 +15,22 @@ public class Manager : MonoBehaviour
     [SerializeField] private QueryableInputField traitInput;
     [SerializeField] private QueryableInputField descriptionInput;
 
-    [SerializeField] private SearchResultUIManager searchResultPanel;
-
     [SerializeField] private DropdownData classDropdownData;
     [SerializeField] private DropdownData familyDropdownData;
 
     [SerializeField] private CreatureGridAdapter gridAdapter;
 
     private DatabaseManager dbManager;
-        
+    private CreatureQuery creatureQuery;
+
     public void Start()
     {
+        creatureQuery = new CreatureQuery();
         dbManager = new DatabaseManager(resetDb);
 
         InitializeDatabase();
         InitializeDropdownLists();
-            
+
         creatureInput.Initialize();
         traitInput.Initialize();
         descriptionInput.Initialize();
@@ -39,24 +38,23 @@ public class Manager : MonoBehaviour
 
     public void RegisterChange()
     {
-        queryObject.MClass = classDropdown.GetCurrentValue();
-        queryObject.Family = familyDropdown.GetCurrentValue();
-        queryObject.SetCreatures(creatureInput.GetCurrentValue());
-        queryObject.Trait = traitInput.GetCurrentValue();
-        queryObject.SetDescription(descriptionInput.GetCurrentValue());
+        creatureQuery.MClass = classDropdown.GetCurrentValue();
+        creatureQuery.Family = familyDropdown.GetCurrentValue();
+        creatureQuery.SetCreatures(creatureInput.GetCurrentValue());
+        creatureQuery.Trait = traitInput.GetCurrentValue();
+        creatureQuery.SetDescription(descriptionInput.GetCurrentValue());
     }
 
     //TODO: can probably move code from RegisterChange into Search()
     public void Search()
     {
-        var monsters = dbManager.QueryForMonsters(queryObject);
+        var monsters = dbManager.QueryForCreatures(creatureQuery);
         gridAdapter.OnDataChanged(monsters);
-        //searchResultPanel.PopulateWithSearchResult(monsters);
     }
 
     public void Clear()
     {
-        queryObject.Clear();
+        creatureQuery.Clear();
         classDropdown.Clear();
         familyDropdown.Clear();
         creatureInput.Clear();
@@ -67,7 +65,7 @@ public class Manager : MonoBehaviour
     private void InitializeDatabase()
     {
         if (!resetDb) return;
-        var json = File.ReadAllText(Application.dataPath + "/Data/traits.json");
+        var json = File.ReadAllText(Path.Combine(Application.streamingAssetsPath, "traits.json"));
         var monsters = JsonConvert.DeserializeObject<IEnumerable<CreatureModel>>(json);
 
         if (monsters == null)
@@ -75,6 +73,7 @@ public class Manager : MonoBehaviour
             Debug.LogError("No data found!");
             return;
         }
+
         foreach (var monster in monsters)
         {
             dbManager.Insert(monster);
@@ -92,6 +91,7 @@ public class Manager : MonoBehaviour
             classes.Insert(0, "");
             classDropdownData.Data = classes;
         }
+
         classDropdown.Initialize(classDropdownData.Data);
 
 
@@ -104,6 +104,7 @@ public class Manager : MonoBehaviour
             families.Insert(0, "");
             familyDropdownData.Data = families;
         }
+
         familyDropdown.Initialize(familyDropdownData.Data);
     }
 }
