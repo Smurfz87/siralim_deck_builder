@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
 using Com.TheFallenGames.OSA.CustomAdapters.GridView;
 using Com.TheFallenGames.OSA.DataHelpers;
 using frame8.Logic.Misc.Other.Extensions;
@@ -37,7 +35,6 @@ public class CreatureGridAdapter : GridAdapter<GridParams, CreatureGridItemViews
 	// This is called anytime a previously invisible item become visible, or after it's created, 
 	// or when anything that requires a refresh happens
 	// Here you bind the data from the model to the item's views
-	// *For the method's full description check the base implementation
 	protected override void UpdateCellViewsHolder(CreatureGridItemViewsHolder newOrRecycled)
 	{
 			var model = Data[newOrRecycled.ItemIndex];
@@ -53,7 +50,6 @@ public class CreatureGridAdapter : GridAdapter<GridParams, CreatureGridItemViews
 			
 			newOrRecycled.classImage.color = Color.cyan;
 			newOrRecycled.familyImage.color = Color.cyan;
-			//newOrRecycled.button.onClick.AddListener();
 	}
 
 	protected override void OnCellViewsHolderCreated(CreatureGridItemViewsHolder cellVh,
@@ -75,79 +71,6 @@ public class CreatureGridAdapter : GridAdapter<GridParams, CreatureGridItemViews
 		}
 		*/
 	#endregion
-
-	// These are common data manipulation methods
-	// The list containing the models is managed by you. The adapter only manages the items' sizes and the count
-	// The adapter needs to be notified of any change that occurs in the data list. 
-	// For GridAdapters, only Refresh and ResetItems work for now
-	#region data manipulation
-	public void AddItemsAt(int index, IList<CreatureModel> items)
-	{
-		//Commented: this only works with Lists. ATM, Insert for Grids only works by manually changing the list and calling NotifyListChangedExternally() after
-		//Data.InsertItems(index, items);
-		Data.List.InsertRange(index, items);
-		Data.NotifyListChangedExternally();
-	}
-
-	public void RemoveItemsFrom(int index, int count)
-	{
-		//Commented: this only works with Lists. ATM, Remove for Grids only works by manually changing the list and calling NotifyListChangedExternally() after
-		//Data.RemoveRange(index, count);
-		Data.List.RemoveRange(index, count);
-		Data.NotifyListChangedExternally();
-	}
-
-	public void SetItems(IList<CreatureModel> items)
-	{
-		Data.ResetItems(items);
-	}
-	#endregion
-
-
-	// Here, we're requesting <count> items from the data source
-	void RetrieveDataAndUpdate(int count)
-	{
-		StartCoroutine(FetchMoreItemsFromDataSourceAndUpdate(count));
-	}
-
-	// Retrieving <count> models from the data source and calling OnDataRetrieved after.
-	// In a real case scenario, you'd query your server, your database or whatever is your data source and call OnDataRetrieved after
-	IEnumerator FetchMoreItemsFromDataSourceAndUpdate(int count)
-	{
-		// Simulating data retrieving delay
-		yield return new WaitForSeconds(.5f);
-			
-		var newItems = new CreatureModel[count];
-
-		// Retrieve your data here
-		/*
-			for (int i = 0; i < count; ++i)
-			{
-				var model = new MyGridItemModel()
-				{
-					title = "Random item ",
-					color = new Color(
-								UnityEngine.Random.Range(0f, 1f),
-								UnityEngine.Random.Range(0f, 1f),
-								UnityEngine.Random.Range(0f, 1f),
-								UnityEngine.Random.Range(0f, 1f)
-							)
-				};
-				newItems[i] = model;
-			}
-			*/
-
-		OnDataRetrieved(newItems);
-	}
-
-	void OnDataRetrieved(CreatureModel[] newItems)
-	{
-		//Commented: this only works with Lists. ATM, Insert for Grids only works by manually changing the list and calling NotifyListChangedExternally() after
-		// Data.InsertItemsAtEnd(newItems);
-
-		Data.List.AddRange(newItems);
-		Data.NotifyListChangedExternally();
-	}
 
 	public void OnDataChanged(IEnumerable<CreatureModel> data)
 	{
@@ -185,6 +108,7 @@ public class CreatureGridItemViewsHolder : CellViewsHolder
 		mainPanel.GetComponentAtPath("Name", out nameText);
 		mainPanel.GetComponentAtPath("Trait", out traitText);
 		mainPanel.GetComponentAtPath("DescriptionBackground/Description", out descriptionText);
+		// FIXME: disable stat values for now, and modify prefab
 		mainPanel.GetComponentAtPath("Stats/Health/Value", out healthValueText);
 		mainPanel.GetComponentAtPath("Stats/Attack/Value", out attackValueText);
 		mainPanel.GetComponentAtPath("Stats/Intelligence/Value", out intelligenceValueText);
@@ -196,35 +120,4 @@ public class CreatureGridItemViewsHolder : CellViewsHolder
 
 		button = mainPanel.parent.GetComponent<Button>();
 	}
-
-	// This is usually the only child of the item's root and it's called "Views". 
-	// That's what the default implementation will look for, but just for flexibility, 
-	// this callback is provided, in case it's named differently or there's more than 1 child 
-	// *See GridExample.cs for more info
-	/*
-		protected override RectTransform GetViews()
-		{ return root.Find("Views").transform as RectTransform; }
-		*/
-
-	// Override this if you have children layout groups. They need to be marked for rebuild when this callback is fired
-	/*
-		public override void MarkForRebuild()
-		{
-			base.MarkForRebuild();
-
-			LayoutRebuilder.MarkLayoutForRebuild(yourChildLayout1);
-			LayoutRebuilder.MarkLayoutForRebuild(yourChildLayout2);
-			AChildSizeFitter.enabled = true;
-		}
-		*/
-
-	// Override this if you've also overridden MarkForRebuild()
-	/*
-		public override void UnmarkForRebuild()
-		{
-			AChildSizeFitter.enabled = false;
-
-			base.UnmarkForRebuild();
-		}
-		*/
 }
