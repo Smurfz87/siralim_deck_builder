@@ -18,8 +18,9 @@ public class CreatureGridAdapter : GridAdapter<GridParams, CreatureGridItemViews
 
 	[SerializeField] private SpriteDictionary classSprites;
 	[SerializeField] private SpriteDictionary familySprites;
+	
+	[SerializeField] private TeamManager teamManager;
 
-		
 	#region GridAdapter implementation
 	protected override void Start()
 	{
@@ -77,8 +78,8 @@ public class CreatureGridAdapter : GridAdapter<GridParams, CreatureGridItemViews
 		base.OnCellViewsHolderCreated(cellVh, cellGroup);
 		cellVh.button.onClick.AddListener(() =>
 		{
-			
-			Debug.Log(UnityEngine.Time.unscaledTime + ": clicked: " + cellVh.ItemIndex);
+			Debug.Log(UnityEngine.Time.unscaledTime + ": clicked: " + cellVh.ItemIndex + " Data: " + Data[cellVh.ItemIndex]);
+			teamManager.ChangeTeamMember(Data[cellVh.ItemIndex]);
 		});
 	}
 	#endregion

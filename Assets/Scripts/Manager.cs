@@ -28,9 +28,6 @@ public class Manager : SerializedMonoBehaviour
 
     [SerializeField] private CreatureGridAdapter gridAdapter;
     [SerializeField] private UIManager uiManager;
-    
-    private GameObject TeamSlot { get; set; }
-
 
     private CreatureQueryModel creatureQueryModel;
     private IDataManager dataManager;
@@ -113,11 +110,6 @@ public class Manager : SerializedMonoBehaviour
         creatureInput.Clear();
         traitInput.Clear();
         descriptionInput.Clear();
-    }
-
-    public void RegisterClickedTeamPosition(GameObject teamSlot)
-    {
-        TeamSlot = teamSlot;
     }
 
     private void InitializeDataManager(string json)
