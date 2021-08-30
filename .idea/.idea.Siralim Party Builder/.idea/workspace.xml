@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f300f90-ba48-476b-8ede-d16e963e15e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Siralim Party Builder/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Siralim Party Builder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siralim Party Builder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Creatures.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Creatures.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeamManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeamManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +214,7 @@
       <workItem from="1619313007288" duration="15736000" />
       <workItem from="1619394070628" duration="43585000" />
       <workItem from="1619559414803" duration="43166000" />
-      <workItem from="1630332056137" duration="9838000" />
+      <workItem from="1630332056137" duration="11196000" />
     </task>
     <servers />
   </component>
