@@ -1,28 +1,69 @@
 ﻿using System.Collections;
-using frame8.Logic.Misc.Other.Extensions;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+namespace UI
 {
-
-    [SerializeField] private GameObject modalDialog;
-    [SerializeField] private TMP_Text msgText;
-    [SerializeField] private Animator animator;
-
-    public void ShowMessage(string message)
+    public class UIManager : MonoBehaviour
     {
-        StartCoroutine(ShowModal(message));
-    }
 
-    private IEnumerator ShowModal(string message)
-    {
-        msgText.text = message;
-        animator.Play("ShowModal");
+        [SerializeField] private GameObject modalDialog;
+        [SerializeField] private TMP_Text msgText;
+        [SerializeField] private Animator modalAnim;
+        [SerializeField] private Animator teamPanelAnim;
+        [SerializeField] private Animator searchPanelAnim;
         
-        yield return new WaitForSeconds(2);
+        private static readonly int ShowTeam = Animator.StringToHash("ShowTeam");
+        private static readonly int HideTeam = Animator.StringToHash("HideTeam");
+        private static readonly int OpenSearch = Animator.StringToHash("OpenSearch");
+        private static readonly int CloseSearch = Animator.StringToHash("CloseSearch");
         
-        animator.Play("HideModal");
+        public void ShowMessage(string message)
+        {
+            StartCoroutine(ShowModal(message));
+        }
+
+        private IEnumerator ShowModal(string message)
+        {
+            msgText.text = message;
+            modalAnim.Play("ShowModal");
+        
+            yield return new WaitForSeconds(2);
+        
+            modalAnim.Play("HideModal");
+        }
+
+        public void ShowTeamPanel()
+        {
+            StartCoroutine(TeamPanelAnim(ShowTeam));
+            //teamPanelAnim.Play("ShowTeam");
+        }
+
+        public void HideTeamPanel()
+        {
+            StartCoroutine(TeamPanelAnim(HideTeam));
+        }
+
+        public void ShowSearchPanel()
+        {
+            StartCoroutine(SearchPanelAnim(OpenSearch));
+        }
+
+        public void HideSearchPanel()
+        {
+            StartCoroutine(SearchPanelAnim(CloseSearch));
+        }
+
+        private IEnumerator TeamPanelAnim(int anim)
+        {
+            teamPanelAnim.SetTrigger(anim);
+            yield return new WaitForSeconds(1);
+        }
+
+        private IEnumerator SearchPanelAnim(int anim)
+        {
+            searchPanelAnim.SetTrigger(anim);
+            yield return new WaitForSeconds(1);
+        }
     }
 }

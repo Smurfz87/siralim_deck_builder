@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f300f90-ba48-476b-8ede-d16e963e15e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Constants/Settings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Constants/Settings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Siralim Party Builder/.idea/dataSources/971651d8-9bb9-406b-a832-2eafd7b7f94b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siralim Party Builder/.idea/dataSources/971651d8-9bb9-406b-a832-2eafd7b7f94b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Anim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Anim.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/SearchPanel.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/SearchPanel.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/ShowModal.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/ShowModal.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/TeamPanel.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/TeamPanel.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/yoink.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/yoink.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/CutiveMono-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/CutiveMono-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JsonDotNet/Assemblies/AOT/Newtonsoft.Json.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JsonDotNet/Assemblies/AOT/Newtonsoft.Json.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CreatureResult.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CreatureResult.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ModalDialog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ModalDialog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Creatures.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Creatures.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constants/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constants/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DataManagers/LinqDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataManagers/LinqDataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DataManagers/SqliteDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataManagers/SqliteDataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropdownData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropdownData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QueryableDropdownField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QueryableDropdownField.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QueryableInputField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QueryableInputField.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeamListAdapter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeamListAdapter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/packages-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="971651d8-9bb9-406b-a832-2eafd7b7f94b" value="Green" />
+    </colors>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Manipulators/Move/MoveItemModeRipple.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMP_SubMesh_Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Playables/ControlPlayableInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9244FB83-44E8-4288-877B-43B45B29C242/03/71160279/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2A08500-0E32-4638-B307-E9A7DA0753F9/4a/5a14a7fa/SqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9244FB83-44E8-4288-877B-43B45B29C242/48/9b3898c8/RectTransform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Animation/AnimationClipCurveCache.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMP_EditorPanelUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMPro_CreateObjectMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/05/9de8e052/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/290425A5-0FF8-4A63-9F8C-060E2D4530F6/f5/2ffd7f54/DataColumn.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Window/TimelineWindow_TrackGui.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMP_BitmapShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MouseOverTooltip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMP_EditorPanel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F23472E3-85DC-4119-A7EB-088C22AEC545/73/587e6765/WWW.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48020190-8ED9-4DDA-A056-1E2E6E0DDD4E/ca/6757b2a2/Win32Exception.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48020190-8ED9-4DDA-A056-1E2E6E0DDD4E/7b/3ba0b4ce/NetworkInformationException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Utilities/Graphics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Window/TimelineWindow_TimeCursor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.3.9/Editor/Views/StartPageView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/a0/29db9be6/02000A58.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9244FB83-44E8-4288-877B-43B45B29C242/5b/aa205e50/ColorUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMP_SubMeshUI_Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMP_BaseShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9244FB83-44E8-4288-877B-43B45B29C242/41/bdee771f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Localization/Localization.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Editor/TMP_SDFShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/Utilities/TrackResourceCache.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/GUI/Views/TestListGUIBase.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Class.cs" />
+      <option value="$PROJECT_DIR$/Assets/Data/traits.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Monsters.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonsterClass.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QueryableField.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QueryBuilder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QueryableDropdownFieldList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Monster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonsterFromPrefabMapper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Test/LayoutManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Test/SearchResultUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SqlExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SearchResultUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Creature.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BasicGridAdapter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DropdownData.cs" />
+      <option value="$PROJECT_DIR$/.gitignore" />
+      <option value="$PROJECT_DIR$/README.adoc" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QueryObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TeamListAdapter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CreatureModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DatabaseManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CreatureQuery.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Query.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LinqDataManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DataManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SqliteDataManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/SqlExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/Com.TheFallenGames/OSA/Scripts/Core/OSA.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/Com.TheFallenGames/OSA/Scripts/CustomAdapters/GridView/GridAdapter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/CreatureModel.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/consoles/db/971651d8-9bb9-406b-a832-2eafd7b7f94b/console.sql" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QueryableDropdownField.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QueryableInputField.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CreatureClass.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ClassSprites.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DataManagers/LinqDataManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DataManagers/SqliteDataManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Constants/Query.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SO/SpriteDictionary.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Constants/Settings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MouseOverTooltip.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TeamManager.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1rO8M9oe1xLbsREbg9Jd8jDpkyv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.38919288" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.45070422" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../desktop_build\Siralim Party Builder.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Development\Unity\desktop_build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10972">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="10972" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f300f90-ba48-476b-8ede-d16e963e15e3" name="Default Changelist" comment="" />
+      <created>1618835727069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618835727069</updated>
+      <workItem from="1618835729507" duration="313000" />
+      <workItem from="1618836119845" duration="5748000" />
+      <workItem from="1618859562783" duration="1473000" />
+      <workItem from="1618861068885" duration="140000" />
+      <workItem from="1618861225029" duration="790000" />
+      <workItem from="1618862035645" duration="57507000" />
+      <workItem from="1619030849438" duration="23795000" />
+      <workItem from="1619172854218" duration="3583000" />
+      <workItem from="1619177811328" duration="54770000" />
+      <workItem from="1619312022100" duration="635000" />
+      <workItem from="1619313007288" duration="15736000" />
+      <workItem from="1619394070628" duration="43585000" />
+      <workItem from="1619559414803" duration="43166000" />
+      <workItem from="1630332056137" duration="3336000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Plugins/Com.TheFallenGames/OSA/Scripts/CustomAdapters/GridView/GridAdapter.cs</url>
+          <line>365</line>
+          <properties documentPath="C:\Development\Unity\Siralim Party Builder\Assets\Plugins\Com.TheFallenGames\OSA\Scripts\CustomAdapters\GridView\GridAdapter.cs" initialLine="365" containingFunctionPresentation="method 'UpdateViewsHolder'">
+            <startOffsets>
+              <option value="18043" />
+            </startOffsets>
+            <endOffsets>
+              <option value="18077" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs</url>
+          <line>76</line>
+          <properties documentPath="C:\Development\Unity\Siralim Party Builder\Assets\Scripts\CreatureGridAdapter.cs" initialLine="71" containingFunctionPresentation="method 'OnCellViewsHolderCreated'">
+            <startOffsets>
+              <option value="2818" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2867" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Development\Unity\Siralim Party Builder\Assets\Scripts\CreatureGridAdapter.cs" initialLine="38" containingFunctionPresentation="method 'UpdateCellViewsHolder'">
+            <startOffsets>
+              <option value="1354" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1396" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CreatureGridAdapter.cs</url>
+          <line>87</line>
+          <properties documentPath="C:\Development\Unity\Siralim Party Builder\Assets\Scripts\CreatureGridAdapter.cs" initialLine="87" containingFunctionPresentation="method 'OnDataChanged'">
+            <startOffsets>
+              <option value="3085" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3103" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

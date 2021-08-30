@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using DataManagers;
 using Newtonsoft.Json;
+using Sirenix.OdinInspector;
+using UI;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityTemplateProjects;
 
-public class Manager : MonoBehaviour
+// ReSharper disable Unity.PerformanceCriticalCodeInvocation
+
+public class Manager : SerializedMonoBehaviour
 {
     [SerializeField] private bool resetDb = false;
     [SerializeField] private bool useSqlite = false;
@@ -24,9 +28,12 @@ public class Manager : MonoBehaviour
 
     [SerializeField] private CreatureGridAdapter gridAdapter;
     [SerializeField] private UIManager uiManager;
+    
+    private GameObject TeamSlot { get; set; }
 
-    private IDataManager dataManager;
+
     private CreatureQueryModel creatureQueryModel;
+    private IDataManager dataManager;
 
     public void Start()
     {
@@ -94,7 +101,7 @@ public class Manager : MonoBehaviour
     {
         var monsters = dataManager.QueryForCreatures(creatureQueryModel).ToList();
         Debug.Log("Search results: " + monsters.Count);
-        uiManager.ShowMessage("Found " + monsters.Count + " matching creatures!");
+        uiManager.ShowMessage("Found " + monsters.Count + " matching creature(s)");
         gridAdapter.OnDataChanged(monsters);
     }
 
@@ -106,6 +113,11 @@ public class Manager : MonoBehaviour
         creatureInput.Clear();
         traitInput.Clear();
         descriptionInput.Clear();
+    }
+
+    public void RegisterClickedTeamPosition(GameObject teamSlot)
+    {
+        TeamSlot = teamSlot;
     }
 
     private void InitializeDataManager(string json)
